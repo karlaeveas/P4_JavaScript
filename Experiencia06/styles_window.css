@@ -1,0 +1,17 @@
+#output {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f0fff0; /* Color de fondo verde claro */
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    color: #006400; /* Color del texto verde oscuro */
+    line-height: 1.5; /* Espacio entre líneas */
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.2); /* Sombra del contenedor */
+}
+
+#output strong {
+    color: #008000; /* Color de los encabezados verde más oscuro */
+    font-size: 1.1em; /* Tamaño de fuente un poco más grande para los encabezados */
+}
