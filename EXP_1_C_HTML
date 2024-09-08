@@ -1,0 +1,40 @@
+<!-- ARCHIVO	: INDEX.HTML -->
+<!-- FECHA	: 07/08/2024 -->
+<!-- DESCRIPCIÓN: El archivo contiene la estructura básica de html, con una sección de galería de perfumes. -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Perfumes</title>
+</head>
+<body>
+    <header>
+        <h1>Explora nuestra Colección de Perfumes</h1>
+    </header>
+
+
+    <main>
+        <section id="galeriaPerfumes">
+            <h2>Perfume del Día</h2>
+            <!-- Imagen del perfume -->
+            <img id="imagenPerfume" src="https://via.placeholder.com/300x300?text=Perfume+1" alt="Perfume 1" width="300" height="300">
+            <!-- Descripción del perfume -->
+            <p id="descripcionPerfume">Perfume 1: Una fragancia suave y floral.</p>
+            <!-- Botón para cambiar el perfume -->
+            <button id="cambiarPerfume">Ver otro perfume</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2024 Galería de Perfumes</p>
+    </footer>
+
+
+    <!-- Enlazar el archivo JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
