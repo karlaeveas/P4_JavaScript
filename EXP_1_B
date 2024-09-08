@@ -1,0 +1,49 @@
+<!-- ARCHIVO	: INDEX.HTML -->
+<!-- FECHA	: 07/08/2024 -->
+<!-- DESCRIPCIÓN: El código muestra un texto del párrafo que cambia dinámicamente sin recargar. -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Perritos</title>
+</head>
+<body>
+    <header>
+        <h1>Galería de Perritos</h1>
+    </header>
+
+
+    <main>
+        <section id="galeria">
+            <h2>¡Mira a este perrito!</h2>
+            <!-- Imagen del perrito -->
+            <img id="imagenPerrito" src="https://via.placeholder.com/300x200?text=Perrito+1" alt="Perrito" width="300" height="200">
+            <!-- Botón para cambiar la imagen -->
+            <button id="cambiarImagen">Ver otro perrito</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2024 Galería de Perritos</p>
+    </footer>
+
+
+    <!-- Código JavaScript dentro de las etiquetas <script> -->
+    <script>
+        // Código JavaScript para cambiar la imagen del perrito
+        document.getElementById("cambiarImagen").addEventListener("click", function() {
+            var imagen = document.getElementById("imagenPerrito");
+            // Cambia la imagen al hacer clic
+            if (imagen.src.includes("Perrito+1")) {
+                imagen.src = "https://via.placeholder.com/300x200?text=Perrito+2";
+            } else {
+                imagen.src = "https://via.placeholder.com/300x200?text=Perrito+1";
+            }
+        });
+    </script>
+</body>
+</html>
