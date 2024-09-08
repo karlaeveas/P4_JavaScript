@@ -1,0 +1,40 @@
+<!-- ARCHIVO	: INDEX.HTML -->
+<!-- FECHA	: 07/08/2024 -->
+<!-- DESCRIPCIÓN: El código muestra un texto del párrafo que cambia dinámicamente sin recargar. -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Práctica de JavaScript</h1>
+    </header>
+
+
+    <main>
+        <section id="dinamismo">
+            <h2>Sección dinámica</h2>
+            <p id="mensaje">Haz clic en el botón para cambiar este mensaje.</p>
+            <button id="botonCambio">Cambiar Mensaje</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2024 Lenguajes de Programación III</p>
+    </footer>
+
+
+    <script>
+        // Declaración de código JavaScript en línea
+        document.getElementById("botonCambio").addEventListener("click", function() {
+            document.getElementById("mensaje").textContent = "¡El mensaje ha sido cambiado!";
+        });
+    </script>
+</body>
+</html>
