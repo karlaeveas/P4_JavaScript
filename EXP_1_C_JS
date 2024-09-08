@@ -1,0 +1,31 @@
+<!-- ARCHIVO	: MAIN.JS -->
+<!-- FECHA	: 07/08/2024 -->
+<!-- DESCRIPCIÓN: El código controlará el cambio de imagen y descripción del perfume cuando el usuario haga clic en el botón.. -->
+
+
+// Lista de perfumes con sus imágenes y descripciones
+const perfumes = [
+    { img: "https://via.placeholder.com/300x300?text=Perfume+1", desc: "Perfume 1: Una fragancia suave y floral." },
+    { img: "https://via.placeholder.com/300x300?text=Perfume+2", desc: "Perfume 2: Un aroma fresco y cítrico." },
+    { img: "https://via.placeholder.com/300x300?text=Perfume+3", desc: "Perfume 3: Un perfume con notas amaderadas y especiadas." }
+];
+
+
+// Índice para cambiar entre los perfumes
+let indiceActual = 0;
+
+
+// Función para cambiar el perfume mostrado
+function cambiarPerfume() {
+    // Incrementar el índice para mostrar el siguiente perfume
+    indiceActual = (indiceActual + 1) % perfumes.length;
+
+
+    // Cambiar la imagen y la descripción del perfume
+    document.getElementById("imagenPerfume").src = perfumes[indiceActual].img;
+    document.getElementById("descripcionPerfume").textContent = perfumes[indiceActual].desc;
+}
+
+
+// Añadir el evento al botón para cambiar de perfume
+document.getElementById("cambiarPerfume").addEventListener("click", cambiarPerfume);
